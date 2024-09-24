@@ -1,10 +1,12 @@
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ 'app.css' | asset_url }}" media="print" onload="this.media='all'">
    {{ content_for_header }}
 </head>
 <body>
-    <main id="main" role="main">
+    <main id="main" role="main" class="bg-blue-300">
         {{ content_for_layout }}
     </main>
+    <script src="{{ 'app.js' | asset_url }}" defer="defer"></script>
 </body>
 </html>
