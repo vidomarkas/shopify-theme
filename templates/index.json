@@ -1,0 +1,38 @@
+{
+	"sections": {
+		"banner": {
+			"type": "banner",
+			"settings": {}
+		},
+		"hero": {
+			"id": "hero",
+			"type": "hero",
+			"title": "Hero Section",
+			"content": "Welcome to our website!"
+		},
+		"about": {
+			"id": "about",
+			"type": "about",
+			"title": "About Us",
+			"content": "We are a company dedicated to..."
+		},
+		"services": {
+			"id": "services",
+			"type": "services",
+			"title": "Our Services",
+			"items": [
+				"Web Development",
+				"Mobile App Design",
+				"UI/UX Consulting"
+			]
+		},
+		"contact": {
+			"id": "contact",
+			"type": "contact",
+			"title": "Contact Us",
+			"email": "info@example.com",
+			"phone": "+1 (123) 456-7890"
+		}
+	},
+	"order": ["banner", "hero", "about", "services", "contact"]
+}
