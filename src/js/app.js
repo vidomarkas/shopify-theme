@@ -1,1 +1,7 @@
-console.log('laravel-mix');
+import Alpine from "alpinejs";
+
+window.Alpine = Alpine;
+
+Alpine.start();
+
+console.log("laravel-mix");

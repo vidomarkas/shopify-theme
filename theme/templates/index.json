@@ -1,5 +1,13 @@
 {
 	"sections": {
+		"announcement-bar": {
+			"type": "announcement-bar",
+			"settings": {}
+		},
+		"header": {
+			"type": "header",
+			"settings": {}
+		},
 		"banner": {
 			"type": "banner",
 			"settings": {}
@@ -34,5 +42,13 @@
 			"phone": "+1 (123) 456-7890"
 		}
 	},
-	"order": ["banner", "hero", "about", "services", "contact"]
+	"order": [
+		"announcement-bar",
+		"header",
+		"banner",
+		"hero",
+		"about",
+		"services",
+		"contact"
+	]
 }

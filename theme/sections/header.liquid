@@ -1,0 +1,26 @@
+<header class="bg-black">
+    <div class="container mx-auto text-white flex justify-between items-center">
+        {% if section.settings.image %}
+            <img src="{{ section.settings.image | image_url: width:450 }}" height="auto" width="50px" alt="">
+        {% endif %}
+        <nav class="absolute left-1/2 -translate-x-1/2">navigation</nav>
+        <div>some buttons</div>
+    </div>
+
+</header>
+
+{% schema %}
+    {
+        "name": "Header",
+        "settings": [ {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Logo"
+    }],
+        "presets": [
+            {
+                "name": "Header"
+            }
+        ]
+    }
+{% endschema %}
