@@ -1,12 +1,32 @@
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="{{ 'app.css' | asset_url }}" media="print" onload="this.media='all'">
-   {{ content_for_header }}
-</head>
-<body>
-    <main id="main" role="main" >
-        {{ content_for_layout }}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link
+      rel="preconnect"
+      href="https://cdn.shopify.com"
+      crossorigin>
+    <title>{{ shop.name }}</title>
+    <meta name="description" content="{{ page_description | escape }}">
+    <link
+      rel="stylesheet"
+      href="{{ 'app.css' | asset_url }}"
+      media="print"
+      onload="this.media='all'">
+
+    {% render 'meta-tags' %}
+    {{ content_for_header }}
+  </head>
+  <body>
+    <a class="skip-to-content-link button sr-only" href="#MainContent">
+      {{ 'accessibility.skip_to_text' | t }}
+    </a>
+    <main id="mainContent" role="main">
+      {{ content_for_layout }}
     </main>
     <script src="{{ 'app.js' | asset_url }}" defer="defer"></script>
-</body>
+  </body>
 </html>
